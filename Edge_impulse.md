@@ -22,7 +22,7 @@ The administrative part:
    - Arduino needed
    - Have all the proper audio in one folder (30 actual)
    - Have all the background in one folder (20 bg)
-   - So the 
+   - So upload one folder at a time and label it accordingly
    - It is important to have 1 and 3 whistles in the background part or else the AI may false trigger after just one whistle, just cause it is in the bg we don't remove it from the actual trigger but teaches when to trigger
    - Splits it 80/20 to Train/Test 
 
@@ -66,4 +66,11 @@ The administrative part:
 
    - We can enable Learned Optimizer and Data Augmentation if it struggles with real world but for our case it is not needed and reduces computation drastically.
    - The augmentation just gives varied example to make it more robust, so it is not necessarily better to turn it on.
+   - Save and train
+
+### Analysis:
+
+   - Check the confusion table and explain
+   - Say the Data explorer has different clouds for different label and also the errors occurs at boundary
+
 
