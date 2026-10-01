@@ -20,7 +20,9 @@ The administrative part:
 1. Done either by just uploading it (Soooper simple)
    - Python needed 
    - Arduino needed
-   - Have all the audio in a single folder and upload it (30 actual, 20 background and wrong)
+   - Have all the proper audio in one folder (30 actual)
+   - Have all the background in one folder (20 bg)
+   - So the 
    - It is important to have 1 and 3 whistles in the background part or else the AI may false trigger after just one whistle, just cause it is in the bg we don't remove it from the actual trigger but teaches when to trigger
    - Splits it 80/20 to Train/Test 
 
@@ -61,4 +63,7 @@ The administrative part:
    - Generate features
 
 ### Classifier tab:
-   
+
+   - We can enable Learned Optimizer and Data Augmentation if it struggles with real world but for our case it is not needed and reduces computation drastically.
+   - The augmentation just gives varied example to make it more robust, so it is not necessarily better to turn it on.
+
