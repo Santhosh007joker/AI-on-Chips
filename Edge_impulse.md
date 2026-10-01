@@ -17,7 +17,11 @@ The administrative part:
 
 ### Data Acquisition:
 
-1. Done either by just uploading it
+1. Done either by just uploading it (Soooper simple)
 2. Or real time acquisition
    - which requires us to use [Data Forwarder](https://docs.edgeimpulse.com/tools/clis/edge-impulse-cli/data-forwarder)
+   - requires [Node.js](https://nodejs.org/en)
+   - and Python 
+   - and Visual Studio C++
+   - and also install EdgeImpulse CLI using ``` npm install -g edge-impulse-cli ```
    - 
