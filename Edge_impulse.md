@@ -17,6 +17,7 @@ The administrative part:
 
 ### Data Acquisition:
 
-- Done either by just uploading it
-- Or real time acquisition
-
+1. Done either by just uploading it
+2. Or real time acquisition
+   - which requires us to use [Data Forwarder](https://docs.edgeimpulse.com/tools/clis/edge-impulse-cli/data-forwarder)
+   - 
