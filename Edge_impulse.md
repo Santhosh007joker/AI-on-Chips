@@ -45,9 +45,10 @@ The administrative part:
    - decreasing stride is better but it also makes it slower due to many overlapping part
 
 3.Processing Block - MFE
-   - MFCC is commonly used for speech and keyword recognition, while MFE is a simpler time–frequency energy representation that can work well for general audio classification
+   - The Learning block only accepts MFE input with 16KHz and 1000 window size
 
-4.Learning Block - Classifier (Regression if want to check say what frequency the whistle is..)
+4.Learning Block - Transfer learning- Keyword spotting 
+    (Regression if want to check say what frequency the whistle is..)
 
 ### Pipe line is done :
 
