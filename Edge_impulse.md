@@ -73,4 +73,24 @@ The administrative part:
    - Check the confusion table and explain
    - Say the Data explorer has different clouds for different label and also the errors occurs at boundary
 
+### Deployment:
 
+   -Arduino library
+   -EON™ Compiler
+   -Go to Arduino -> Sketch -> Include Library -> Add .ZIP Library
+
+### Code uploading:
+   -Examples
+   -Custom Library -> esp32 -> esp32_microphone_Continuous
+   - ``` 
+     i2s_pin_config_t pin_config = {
+         .bck_io_num = 22,    // IIS_SCLK
+         .ws_io_num = 32,     // IIS_LCLK
+         .data_out_num = -1,  // IIS_DSIN
+         .data_in_num = 33,   // IIS_DOUT
+      }; ```
+   -change these to our corresponding pin values of our setup
+   -default is Right only mic
+   -matching the commmunication protocol of mic we change :   .communication_format = I2S_COMM_FORMAT_STAND_I2S,
+   -change the input bit rate : .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,
+   
