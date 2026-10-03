@@ -18,7 +18,7 @@ The administrative part:
 ### Data Acquisition:
 
 1. Done either by just uploading it (Soooper simple)
-   - Python needed 
+   - Install python from [here](https://www.python.org/downloads/release/pymanager-263/)
    - Arduino needed
    - Have all the proper audio in one folder (30 actual)
    - Have all the background in one folder (20 bg)
