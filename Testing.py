@@ -9,27 +9,31 @@ from serial.tools import list_ports
 PORT = None            # e.g. "COM24". None = auto-detect
 BAUD = 115200
 THRESHOLD = 0.80       # minimum confidence to trigger
+GLOBAL_LOCKOUT = 0.5       # seconds: after ANY site opens, no other site can open
 DEFAULT_COOLDOWN = 3   # seconds, for any keyword not listed below
 DEBUG = False          # True = print every score
 
 # ---------------- KEYWORD -> WEBSITE ----------------
 # If a label CONTAINS the keyword (case-insensitive), the action runs.
 ACTIONS = {
+    "wifi":     lambda: webbrowser.open("https://internet.iitb.ac.in/"),
     "internet": lambda: webbrowser.open("https://internet.iitb.ac.in/"),
     "mail":     lambda: webbrowser.open("https://webmail.iitb.ac.in/?_task=mail&_mbox=INBOX"),
     "moodle":   lambda: webbrowser.open("https://moodle.iitb.ac.in/login/index.php"),
 }
 
-# Minimum seconds before the same site can open again
+# Minimum seconds before the SAME site can open again
 COOLDOWNS = {
-    "internet": 3,
-    "mail":     3,
-    "moodle":   3,
+    "wifi":     3,
+    "internet": 5,
+    "mail":     7,
+    "moodle":   5,
 }
 
 # ---------------- INTERNALS ----------------
 LINE_RE = re.compile(r"^\s+(.+?):\s*(-?\d+(?:\.\d+)?)\s*$")
-last_fired = {}
+last_fired = {}        # per keyword: time it last opened
+last_any_fired = 0     # time any site last opened
 armed = {}             # per keyword: True = ready to fire
 seen_labels = set()
 
@@ -46,6 +50,8 @@ def find_port():
 
 
 def handle(label, score):
+    global last_any_fired
+
     if DEBUG:
         print(f"{label}: {score:.2f}")
 
@@ -63,12 +69,20 @@ def handle(label, score):
 
     if not armed.get(key, True):
         return                     # same utterance still going, ignore
-    armed[key] = False
+    armed[key] = False             # used up for this utterance, fired or not
 
     now = time.time()
+
+    # global lockout: some site opened very recently
+    if now - last_any_fired < GLOBAL_LOCKOUT:
+        return
+
+    # per-site cooldown
     if now - last_fired.get(key, 0) < COOLDOWNS.get(key, DEFAULT_COOLDOWN):
         return
+
     last_fired[key] = now
+    last_any_fired = now
 
     print(f"[TRIGGER] {label} ({score:.2f}) -> {key}")
     try:
