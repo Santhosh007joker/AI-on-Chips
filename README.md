@@ -6,8 +6,9 @@ A Step-by-Step guide for creating your first AI, working entirely on a MicroCont
 ## Table of Contents
 
 1. [Arduino IDE](#1-arduino-ide)
-2. [Python 3.15](#2-python-315)
+2. [Python 3.14](#2-python-314)
 3. [Installing pyserial](#3-installing-pyserial)
+4. [Link to Drive]()
 
 ---
 
@@ -36,11 +37,11 @@ Pick the installer for your OS (Windows, macOS, Linux) from the download page an
 
 ---
 
-## 2. Python 3.15
+## 2. Python 3.14
 
 | Item | Link |
 |------|------|
-| **Python 3.15.0 download page** | <https://www.python.org/downloads/> |
+| **Python 3.14.0 download page** | <https://www.python.org/downloads/> |
 
 During installation on Windows, tick **"Add python.exe to PATH"**.
 
