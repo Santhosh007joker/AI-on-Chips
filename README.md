@@ -6,10 +6,9 @@ A Step-by-Step guide for creating your first AI, working entirely on a MicroCont
 ## Table of Contents
 
 1. [Arduino IDE](#1-arduino-ide)
-2. [ESP32 Board Support (GitHub)](#2-esp32-board-support-github)
-3. [Python 3.15](#3-python-315)
-4. [Installing pyserial](#4-installing-pyserial)
-5. [Quick Verification](#5-quick-verification)
+2. [Python 3.15](#3-python-315)
+3. [Installing pyserial](#4-installing-pyserial)
+4. [Quick Verification](#5-quick-verification)
 
 ---
 
@@ -18,7 +17,6 @@ A Step-by-Step guide for creating your first AI, working entirely on a MicroCont
 | Item | Link |
 |------|------|
 | **Official download page** | <https://www.arduino.cc/en/software> |
-| Arduino IDE source (GitHub) | <https://github.com/arduino/arduino-ide> |
 
 Pick the installer for your OS (Windows, macOS, Linux) from the download page and run it.
 
@@ -35,17 +33,15 @@ Pick the installer for your OS (Windows, macOS, Linux) from the download page an
 
 3. Open **Tools → Board → Boards Manager**.
 4. Search for **esp32** (by Espressif Systems) and click **Install**.
-5. Select your board under **Tools → Board → esp32** (e.g. *ESP32 Dev Module*).
+5. Select your board under **Tools → Board → esp32** (e.g. *ESP32 Dev Kit*).
 
 ---
 
-## 3. Python 3.15
+## 2. Python 3.15
 
 | Item | Link |
 |------|------|
-| **Python 3.15.0 release page** | <https://www.python.org/downloads/release/python-3150/> |
-| All downloads | <https://www.python.org/downloads/> |
-| Release candidate 2 (fallback) | <https://www.python.org/downloads/release/python-3150rc2/> |
+| **Python 3.15.0 download page** | <https://www.python.org/downloads/release/python-3150/> |
 
 > **Note:** Python 3.15 is a brand-new release. If the final 3.15.0 page is not
 > available for your platform yet, use the release candidate link above.
