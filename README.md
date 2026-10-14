@@ -6,8 +6,8 @@ A Step-by-Step guide for creating your first AI, working entirely on a MicroCont
 ## Table of Contents
 
 1. [Arduino IDE](#1-arduino-ide)
-2. [Python 3.15](#3-python-315)
-3. [Installing pyserial](#4-installing-pyserial)
+2. [Python 3.15](#2-python-315)
+3. [Installing pyserial](#3-installing-pyserial)
 
 ---
 
