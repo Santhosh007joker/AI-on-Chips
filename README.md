@@ -41,7 +41,7 @@ Pick the installer for your OS (Windows, macOS, Linux) from the download page an
 
 | Item | Link |
 |------|------|
-| **Python 3.14.0 download page** | <https://www.python.org/downloads/> |
+| **Python 3.14.7 download page** | <https://www.python.org/downloads/> |
 
 During installation on Windows, tick **"Add python.exe to PATH"**.
 
