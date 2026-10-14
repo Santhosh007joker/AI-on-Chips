@@ -24,14 +24,6 @@ Pick the installer for your OS (Windows, macOS, Linux) from the download page an
 
 ---
 
-## 2. ESP32 Board Support (GitHub)
-
-| Item | Link |
-|------|------|
-| **Arduino core for ESP32 (repo)** | <https://github.com/espressif/arduino-esp32> |
-| ESP-IDF (Espressif's native framework) | <https://github.com/espressif/esp-idf> |
-| Releases page | <https://github.com/espressif/arduino-esp32/releases> |
-
 ### Add ESP32 to the Arduino IDE
 
 1. Open **File → Preferences**.
