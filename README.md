@@ -8,7 +8,6 @@ A Step-by-Step guide for creating your first AI, working entirely on a MicroCont
 1. [Arduino IDE](#1-arduino-ide)
 2. [Python 3.14](#2-python-314)
 3. [Installing pyserial](#3-installing-pyserial)
-4. [Link to Drive]()
 
 ---
 
@@ -74,3 +73,5 @@ python -m pip install --force-reinstall pyserial
 | Windows | `py -m pip install pyserial` |
 | Linux / macOS | `python3 -m pip install pyserial` |
 
+
+Audio database <https://drive.google.com/drive/u/1/folders/1h3GVJuJ_RJXA6AAGGDZRt_p16EmRTlnB>
