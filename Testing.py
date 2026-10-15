@@ -24,10 +24,10 @@ ACTIONS = {
 
 # Minimum seconds before the SAME site can open again
 COOLDOWNS = {
-    "wifi":     3,
+    "wifi":     0.5,
     "internet": 5,
-    "mail":     3,
-    "moodle":   3,
+    "mail":     0.5,
+    "moodle":   0.5,
 }
 
 # ---------------- INTERNALS ----------------
