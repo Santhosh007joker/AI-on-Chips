@@ -26,8 +26,8 @@ ACTIONS = {
 COOLDOWNS = {
     "wifi":     3,
     "internet": 5,
-    "mail":     7,
-    "moodle":   5,
+    "mail":     3,
+    "moodle":   3,
 }
 
 # ---------------- INTERNALS ----------------
