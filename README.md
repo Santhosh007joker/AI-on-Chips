@@ -74,4 +74,4 @@ python -m pip install --force-reinstall pyserial
 | Linux / macOS | `python3 -m pip install pyserial` |
 
 
-Audio database <https://drive.google.com/drive/u/1/folders/1h3GVJuJ_RJXA6AAGGDZRt_p16EmRTlnB>
+Audio database <https://drive.google.com/drive/folders/16ouRGZ-5jHA7f5_kmOudJ2vXCSyXj0hC?usp=drive_link>
